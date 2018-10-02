@@ -3,6 +3,7 @@ layout: default
 title: Ubisen
 ref: index
 lang: en
+image: /images/services/agriculture.jpg
 ---
 
 
@@ -10,16 +11,14 @@ lang: en
 
 {% include block-slider.html data=site.data.home.slider %}
 
-{% include block-1.html data=site.data.home.block-1-en %}
-
-{% include block-3.html title='Solutions' description='Ubisen Solutions' contents=site.solutions %}
-
-{% include block-3.html title='Product' description='Ubisen Product' contents=site.products %}
-
-{% include block-2.html data=site.data.home.block-2-en %}
-
 {% include block-4.html data=site.data.home.block-4-en %}
+
+{% assign solutions = site.solutions | where_exp:"item", "item.lang == page.lang" %}
+
+{% include block-2.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}
 
 {% include block-number.html data=site.data.home.block-number-en %}
 
-{% include block-content-slider.html data=site.data.home.block-3-en %}
+{% include block-3.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}
+
+{% include block-content-slider.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}

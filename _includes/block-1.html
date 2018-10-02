@@ -1,10 +1,15 @@
+{% if include.data != null %}
+    {% assign data=include.data %}
+{% else %}
+    {% assign data=include %}
+{% endif %}
 <section class="ftco-section-parallax ftco-degree-bg">
     <div class="parallax-img d-flex align-items-center">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
-                    <h2 class="h1 font-weight-bold">{{ include.data.content }}</h2>
-                    <p><a href="{{ include.data.url }}" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">{{ include.data.title }}</a></p>
+                    <h2 class="h1 font-weight-bold">{{ data.content }}</h2>
+                    <p><a href="{{ data.url }}" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">{{ data.title }}</a></p>
                 </div>
             </div>
         </div>

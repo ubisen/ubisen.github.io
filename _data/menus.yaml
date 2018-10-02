@@ -19,7 +19,7 @@
     vi: Giải Pháp
   path:
     en: /solutions
-    vi: /solutions
+    vi: /giai-phap
   ref: solutions
 
 - title:
@@ -27,7 +27,7 @@
     vi: Sản phẩm
   path:
     en: /products
-    vi: /products
+    vi: /san-pham
   ref: products
 
 - title:
@@ -55,14 +55,14 @@
   ref:
   sub:
     - title:
-        en: Smart gateway
-        vi: Smart gateway
-      path:
-        en: /#1
-        vi: /#2
-    - title:
         en: Serial gateway
         vi: Serial gateway
       path:
-        en: /#1
-        vi: /#2
+        en: https://gateway.beegrow.com
+        vi: https://gateway.beegrow.com
+    - title:
+        en: Account
+        vi: Tài khoản
+      path:
+        en: https://admin.beegrow.com/accounts/profile
+        vi: https://admin.beegrow.com/accounts/profile

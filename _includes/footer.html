@@ -50,16 +50,30 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>
-                    Copyright &copy; 2014 - 2018 All rights reserved
+                    {% if page.lang != null %}
+                        {{ footer.copyright[page.lang] }}
+                    {% else %}
+                        {{ footer.copyright['en'] }}
+                    {% endif %}
                     {% if page.ref %}
                         {% assign posts=site.posts | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
                         {% for post in posts %}
-                        | <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ site.language[post.lang] }}</a>
+                        | <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}"><img src="{{ site.flag[post.lang] }}" style="height: 25px;""> {{ site.language[post.lang] }}</a>
                         {% endfor %}
 
                         {% assign pages=site.pages | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
-                        {% for page in pages %}
-                        | <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ site.language[page.lang] }}</a>
+                        {% for _page in pages %}
+                        | <a href="{{ _page.url | prepend: site.baseurl }}" class="{{ _page.lang }}"><img src="{{ site.flag[_page.lang] }}" style="height: 25px;""> {{ site.language[_page.lang] }}</a>
+                        {% endfor %}
+
+                        {% assign products=site.products | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
+                        {% for product in products %}
+                        | <a href="{{ product.url | prepend: site.baseurl }}" class="{{ product.lang }}"><img src="{{ site.flag[product.lang] }}" style="height: 25px;""> {{ site.language[product.lang] }}</a>
+                        {% endfor %}
+
+                        {% assign solutions=site.solutions | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
+                        {% for solution in solutions %}
+                        | <a href="{{ solution.url | prepend: site.baseurl }}" class="{{ solution.lang }}"><img src="{{ site.flag[solution.lang] }}" style="height: 25px;""> {{ site.language[solution.lang] }}</a>
                         {% endfor %}
                     {% endif %}
                 </p>

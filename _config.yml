@@ -15,8 +15,8 @@ title:
 
 name: Ubisen
 description:
-  en:               Ubisen Inc.
-  vi:               Công ty cổ phần Ubisen.
+  en:               An Internet of Things platform and technology company. Trends of supervising and control devices via the Internet (Internet of Things - IOT) are becoming increasingly popular , with Enterprise Service Integration M2M platform , Ubisen platform is the solution which helps businesses save time to build , deploy secure IOT system.
+  vi:               Giải pháp IOT kết nối tất cả thiết bị qua Internet. Xu hướng kết nối giám sát điều khiển thiết bị qua internet ( Internet of Things- IOT) đang ngày càng phổ biến, với nền tảng M2M Enterprise Service Integration, Ubisen platform là giải pháp giúp doanh nghiệp tiết kiệm thời gian xây dựng, triển khai hệ thống IOT an toàn, bảo mật.
 
 index:
   en:
@@ -25,6 +25,10 @@ index:
 language:
   en:               English
   vi:               Tiếng Việt
+
+flag:
+  en: /images/en.png
+  vi: /images/vi.png
 
 url:                 https://ubisen.com
 baseurl:             ""
@@ -53,3 +57,4 @@ markdown:            kramdown
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap

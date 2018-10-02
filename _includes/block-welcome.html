@@ -1,16 +1,23 @@
+{% if include.data != null %}
+    {% assign data=include.data %}
+{% else %}
+    {% assign data=include %}
+{% endif %}
 <section class="home-slider owl-carousel ftco-degree-bg">
-    <div class="slider-item" style="background-image: url('{{ '/images/bg_1.jpg' | site.baseurl }}');" data-stellar-background-ratio="0.5">
+    <div class="slider-item" style="background-image: url('{{ '/images/bg/1.jpg' | site.baseurl }}');" data-stellar-background-ratio="0.5">
         <div class="overlay">
         </div>
         <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
                 <div class="col-md-10 ftco-animate text-center">
-                    <h1 class="mb-4">{{ include.data.title }}
-                        <strong class="typewrite" data-period="4000" data-type='{{ include.data.typewrite }}'>
+                    <h1 class="mb-4">{{ data.title }}
+                        {% if data.typewrite != null %}
+                        <strong class="typewrite" data-period="4000" data-type='{{ data.typewrite }}'>
                             <span class="wrap"></span>
                         </strong>
+                        {% endif %}
                     </h1>
-                    <p>{{ include.data.description }}</p>
+                    <p>{{ data.description }}</p>
                     <p><a href="https://www.youtube.com/watch?v=Q3ur8wzzhBU" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span
                                 class="ion-ios-play mr-2"></span> Watch Video</a></p>
                 </div>

@@ -1,27 +1,31 @@
-title: WELCOME TO UBISEN
-description: An Internet of Things platform and technology company
+title: Ubisen Platform
+description: IOT Solution connecting every devices via the Internet.
 contents:
-  - title: asdfa
+  - title: Security
     url: /
-    image: /images/work-1.jpg
-    header: sgasgasgasg
-    description: Hệ thống riêng phù hợp với doanh nghiệp. Đảm bảo tính an toàn, ổn định, mở rộng cao. Tiết kiệm thời gian xây dựng, R&D; hệ thống. Dịch vụ IOT trọn gói, chi phí phù hợp, hỗ trợ dài lâu.
+    image: /
+    icon: icon-security
+    header:
+    description: Secure connection and high scalable system.
 
-  - title: asdfa
+  - title: Easy
     url: /
-    image: /images/work-1.jpg
-    header: sgasgasgasg
-    description: <ul><li>Miễn phí tài khoản, hỗ trợ online.</li><li>Tài liệu API chi tiết, thư viện lập trình mở.</li><li>Test, triển khai hệ thống nhanh chóng.</li><li>Hỗ trợ tốt nhất có thể cho cộng đồng IOT developer.</li>
+    image: /
+    icon: icon-building-o
+    header:
+    description: Easy to build application, intuitive interface.
 
-  - title: asdfa
+  - title: Foundation
     url: /
-    image: /images/work-1.jpg
-    header: sgasgasgasg
-    description: Chính sách ưu đãi tốt.Hỗ trợ đào tạo miễn phí.Cập nhật công nghệ mới.
+    image: /
+    header:
+    icon: icon-connectdevelop
+    description: Foundation of multi-system network IOT.
 
-  - title: asdfa
+  - title: Cloud service
     url: /
-    image: /images/work-1.jpg
-    header: sgasgasgasg
-    description: Xu hướng kết nối giám sát điều khiển thiết bị qua internet ( Internet of Things- IOT) đang ngày càng phổ biến, với nền tảng M2M Enterprise Service Integration, Ubisen platform là giải pháp giúp doanh nghiệp tiết kiệm thời gian xây dựng, triển khai hệ thống IOT an toàn, bảo mật.
+    image: /
+    header:
+    icon: icon-cloud_circle
+    description: Cloud service supporting enterprise mobility..
 

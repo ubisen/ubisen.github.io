@@ -1,0 +1,31 @@
+title: Ubisen Platform
+description: Giải pháp IOT kết nối tất cả thiết bị qua Internet.
+contents:
+  - title: An toàn
+    url: /
+    image: /
+    icon: icon-security
+    header:
+    description: Kết nối an toàn, khả năng mở rộng cao.
+
+  - title: Dễ dàng
+    url: /
+    image: /
+    icon: icon-building-o
+    header:
+    description: Xây dựng ứng dụng dễ dàng, trực quan.
+
+  - title: Nền tảng
+    url: /
+    image: /
+    header:
+    icon: icon-connectdevelop
+    description: Nền tảng xây dựng mạng lưới IOT đa hệ thống.
+
+  - title: Cloud services
+    url: /
+    image: /
+    header:
+    icon: icon-cloud_circle
+    description: Cloud services đảm bảo tính di động cho doanh nghiệp.
+

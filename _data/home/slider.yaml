@@ -1,8 +1,11 @@
-- image: "/images/dashboard_full_1.jpg"
+- image: "/images/services/platform-overview.png"
   path: #
 
-- image: "/images/dashboard_full_2.jpg"
+- image: "/images/services/agriculture.jpg"
   path: #
 
-- image: "/images/dashboard_full_3.jpg"
+- image: "/images/services/bsl.png"
+  path: #
+
+- image: "/images/services/sht.png"
   path: #

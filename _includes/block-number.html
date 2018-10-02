@@ -1,12 +1,18 @@
+{% if include.data != null %}
+    {% assign data=include.data %}
+{% else %}
+    {% assign data=include %}
+{% endif %}
 <section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                <h2>{{ include.data.title }}</h2>
+                <h2>{{ data.title }}</h2>
+                <span class="subheading">{{ data.description }}</span>
             </div>
         </div>
         <div class="row">
-            {% for content in include.data.contents %}
+            {% for content in data.contents %}
             <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18 text-center">
                     <div class="text">

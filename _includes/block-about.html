@@ -1,4 +1,9 @@
-{% for content in include.data.contents %}
+{% if include.data != null %}
+    {% assign data=include.data %}
+{% else %}
+    {% assign data=include %}
+{% endif %}
+{% for content in data.contents %}
 <section class="ftco-section-2 ftco-degree-bg" style="padding: 0 0 8em 0;">
     <div class="container d-flex">
         <div class="section-2-blocks-wrapper row d-flex">
@@ -6,6 +11,7 @@
             </div>
             <div class="text col-lg-6 order-first ftco-animate">
                 <div class="text-inner align-self-start">
+                    <img src="/images/logo256.png" style="width: auto;"/>
                     <h3 class="heading">{{ content.title }}</h3>
                     {{ content.description }}
                 </div>
