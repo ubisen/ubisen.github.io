@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% include block-0.html %}
+
+<section class="ftco-section ftco-degree-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ftco-animate">
+          {{ content | markdownify }}
+        </div> <!-- .col-md-8 -->
+        <div class="col-md-4 sidebar ftco-animate">
+          <div class="sidebar-box ftco-animate">
+            <div class="categories">
+              <h3>Categories</h3>
+              {% for categories in site.categories %}
+              <li><a href="#">{{ categories | first }} <span>({{ categories[1].size }})</span></a></li>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="sidebar-box ftco-animate">
+            <h3>Recent Blog</h3>
+            {% for blogs in site.related_posts limit:5 %}
+            <div class="block-21 mb-4 d-flex">
+              <a class="blog-img mr-4" style="background-image: url('{{ blogs.image | prepend: site.baseurl }}');"></a>
+              <div class="text">
+                <h3 class="heading"><a href="{{ blogs.url }}">{{ blogs.title }}</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> {{ blogs.date | date: '%B %d, %Y' }}</a></div>
+                  <div><a href="#"><span class="icon-person"></span> {{ blogs.author }}</a></div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div class="sidebar-box ftco-animate">
+            <h3>Tags</h3>
+            <div class="tagcloud">
+              {% assign tags = site.tags | sort %}
+              {% for tag in tags %}
+              <a href="#" class="tag-cloud-link">{{ tag | first }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .section -->

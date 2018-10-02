@@ -1,0 +1,68 @@
+- title:
+    en: Home
+    vi: Trang chủ
+  path:
+    en: /
+    vi: /vi
+  ref: index
+
+- title:
+    en: About
+    vi: Về chúng tôi
+  path:
+    en: /about
+    vi: /ve-chung-toi
+  ref: about
+
+- title:
+    en: Solutions
+    vi: Giải Pháp
+  path:
+    en: /solutions
+    vi: /solutions
+  ref: solutions
+
+- title:
+    en: Products
+    vi: Sản phẩm
+  path:
+    en: /products
+    vi: /products
+  ref: products
+
+- title:
+    en: Contact
+    vi: Liên Hệ
+  path:
+    en: /contact
+    vi: /lien-he
+  ref: contact
+
+- title:
+    en: Blog
+    vi: Bài viết
+  path:
+    en: /blogs
+    vi: /blogs
+  ref: blogs
+
+- title:
+    en: Application
+    vi: Ứng dụng
+  path:
+    en: /about
+    vi: /about
+  ref:
+  sub:
+    - title:
+        en: Smart gateway
+        vi: Smart gateway
+      path:
+        en: /#1
+        vi: /#2
+    - title:
+        en: Serial gateway
+        vi: Serial gateway
+      path:
+        en: /#1
+        vi: /#2

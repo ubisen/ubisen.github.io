@@ -1,0 +1,17 @@
+<section class="ftco-section-featured ftco-animate">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel owl-carousel">
+          {% for item in include.data %}
+          <div class="item">
+            <a href="{{ item.path }}">
+              <img src="{{ item.image | site.baseurl }}" class="img-fluid" alt="">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

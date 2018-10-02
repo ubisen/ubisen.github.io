@@ -1,0 +1,101 @@
+{% assign footer=site.data.footer %}
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">{{ footer.block1.title[page.lang] }}</h2>
+                    <p>{{ footer.block1.description[page.lang] }}</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                        <li class="ftco-animate"><a href="https://twitter.com/{{ footer.twitter }}" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.facebook.com/{{footer.facebook}}" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.linkedin.com/in/{{ footer.linkedin}}" target="_blank"><span class="icon-linkedin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">{{ footer.block2.title[page.lang] }}</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="https://maps.google.com/?ll={{ footer.latlng }}" class="py-2 d-block" target="_blank">{{ footer.address[page.lang] }}</a></li>
+                        <li><a href="tel://{{ footer.phone-1 }}" class="py-2 d-block">Phone 1: {{ footer.phone-1 }}</a></li>
+                        <li><a href="tel://{{ footer.phone-1 }}" class="py-2 d-block">Phone 2: {{ footer.phone-2 }}</a></li>
+                        <li><a href="mailto:{{footer.email}}" class="py-2 d-block">Email: {{ footer.email }}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">{{ footer.block3.title[page.lang] }}</h2>
+                    <ul class="list-unstyled">
+                        {% for link in footer.link %}
+                        <li><a href="{{ link.path[page.lang] }}" class="py-2 d-block">{{ link.title[page.lang] }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">{{ footer.block4.title[page.lang] }}</h2>
+                    <p>{{ footer.block4.description[page.lang] }}</p>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group">
+                            <span class="icon icon-paper-plane"></span>
+                            <input type="text" class="form-control" placeholder="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    Copyright &copy; 2014 - 2018 All rights reserved
+                    {% if page.ref %}
+                        {% assign posts=site.posts | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
+                        {% for post in posts %}
+                        | <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ site.language[post.lang] }}</a>
+                        {% endfor %}
+
+                        {% assign pages=site.pages | where:"ref", page.ref | where_exp:"item", "item.lang != page.lang" | sort: 'lang' %}
+                        {% for page in pages %}
+                        | <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ site.language[page.lang] }}</a>
+                        {% endfor %}
+                    {% endif %}
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24"
+            cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"
+        /></svg></div>
+
+<script>
+    var address = "{{ site.data.footer.address[page.lang] }}";
+    var latlng = [{{ site.data.footer.latlng }}];
+</script>
+
+<script src="{{ '/js/jquery.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery-migrate-3.0.1.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/popper.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/bootstrap.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.easing.1.3.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.waypoints.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.stellar.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/owl.carousel.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.magnific-popup.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/aos.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.animateNumber.min.js' | site.baseurl }}"></script>
+<script src="{{ '/js/bootstrap-datepicker.js' | site.baseurl }}"></script>
+<script src="{{ '/js/jquery.timepicker.min.js' | site.baseurl }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="{{ '/js/google-map.js' | site.baseurl }}"></script>
+<script src="{{ '/js/main.js' | site.baseurl }}"></script>

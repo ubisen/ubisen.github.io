@@ -1,0 +1,21 @@
+<section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <h2>{{ include.data.title }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for content in include.data.contents %}
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                <div class="block-18 text-center">
+                    <div class="text">
+                        <strong class="number" data-number="{{ content.to }}">{{ content.from }}</strong>
+                        <span>{{ content.description }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

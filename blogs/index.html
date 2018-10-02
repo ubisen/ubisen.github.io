@@ -1,0 +1,68 @@
+---
+layout: default
+title: Blogs
+ref: blogs
+lang: en
+---
+
+{% include block-0.html %}
+
+<section class="ftco-section ftco-degree-bg" style="padding: 0 0 8em 0;">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">more log</span>
+                <h1>Blogs</h1>
+            </div>
+        </div>
+        <div class="row">
+            {% for blog in paginator.posts %}
+            <div class="col-md-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="{{ blog.url | prepend: site.baseurl }}" class="block-20" style="background-image: url('{{ blog.image | prepend: site.baseurl }}');">
+                    </a>
+                    <div class="text p-4 d-block">
+                        <div class="meta mb-3">
+                            <div><a href="#"><span class="icon-calendar"></span> {{ blog.date | date: '%B %d, %Y' }}</a></div>
+                            <div><a href="#"><span class="icon-tags"></span> {{ blog.categories }}</a></div>
+                            <div><a href="{{ blog.author_url }}"><span class="icon-person"></span> {{ blog.author }}</a></div>
+                        </div>
+                        <h3 class="heading"><a href="{{ blog.url | prepend: site.baseurl }}">{{ blog.title }}</a></h3>
+                        <div class="meta mb-2">
+                            <p>{{ blog.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- pagination -->
+        {% if paginator.total_pages > 1 %}
+        <div class="row mt-5">
+            <div class="col text-center">
+              <div class="block-27">
+                <ul>
+                {% if paginator.previous_page %}
+                  <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;</a></li>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                  <li class="active"><span>{{ page }}</span></li>
+                {% elsif page == 1 %}
+                  <li><a href="/blogs/">{{ page }}</a></li>
+                {% else %}
+                  <li><a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
+                {% if paginator.next_page %}
+                  <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&gt;</a></li>
+                {% endif %}
+                </ul>
+              </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>

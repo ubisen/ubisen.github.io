@@ -1,0 +1,48 @@
+<head>
+  <title>
+    {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}
+  </title>
+  <meta charset="utf-8">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- language -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %}
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+  {% endfor %}
+
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %}
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+  {% endfor %}
+  
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- style -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ '/public/favicon.png' | site.baseurl }}">
+
+
+  <link rel="stylesheet" href="{{ '/css/open-iconic-bootstrap.min.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/animate.css' | site.baseurl }}">
+
+  <link rel="stylesheet" href="{{ '/css/owl.carousel.min.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/owl.theme.default.min.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/magnific-popup.css' | site.baseurl }}">
+
+  <link rel="stylesheet" href="{{ '/css/aos.css' | site.baseurl }}">
+
+  <link rel="stylesheet" href="{{ '/css/ionicons.min.css' | site.baseurl }}">
+
+  <link rel="stylesheet" href="{{ '/css/bootstrap-datepicker.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/jquery.timepicker.css' | site.baseurl }}">
+
+
+  <link rel="stylesheet" href="{{ '/css/flaticon.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/icomoon.css' | site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | site.baseurl }}">
+</head>

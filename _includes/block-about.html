@@ -1,0 +1,16 @@
+{% for content in include.data.contents %}
+<section class="ftco-section-2 ftco-degree-bg" style="padding: 0 0 8em 0;">
+    <div class="container d-flex">
+        <div class="section-2-blocks-wrapper row d-flex">
+            <div class="img col-sm-12 col-lg-6 order-last" style="background-image: url('{{ content.image | site.baseurl }}');">
+            </div>
+            <div class="text col-lg-6 order-first ftco-animate">
+                <div class="text-inner align-self-start">
+                    <h3 class="heading">{{ content.title }}</h3>
+                    {{ content.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}

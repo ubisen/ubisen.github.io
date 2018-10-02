@@ -1,0 +1,64 @@
+twitter: ubisen
+facebook: ubisen.com
+linkedin: ubisen
+address:
+  en: 74 7 St., Binh An ward, Dist. 2, Ho Chi Minh city
+  vi: Số 74, Đường số 7, Khu phố 4, Phường Bình An, Quận 2 TP Hồ Chí Minh
+latlng: 10.793634, 106.734220
+phone-1: "+84903979103"
+phone-2: "+84975245249"
+email: contact@ubisen.com
+link:
+  - title:
+      en: About us
+      vi: Thông tin công ty
+    path:
+      en: /
+      vi: /
+
+  - title:
+      en: FAQs
+      vi: FAQs
+    path:
+      en: /
+      vi: /
+
+  - title:
+      en: Privacy policy
+      vi: Quyền riêng tư
+    path:
+      en: /privacy
+      vi: /quyen-rieng-tu
+  - title:
+      en: Terms of Service
+      vi: Điều khoản sử dụng
+    path:
+      en: /terms
+      vi: /dieu-khoan
+
+block1:
+  title:
+    en: Company
+    vi: cong ty
+  description:
+    en: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    vi: Xu hướng kết nối giám sát điều khiển thiết bị qua internet ( Internet of Things- IOT) đang ngày càng phổ biến, với nền tảng M2M Enterprise Service Integration, Ubisen platform là giải pháp giúp doanh nghiệp tiết kiệm thời gian xây dựng, triển khai hệ thống IOT an toàn, bảo mật.
+
+block2:
+  title:
+    en: Contact Information
+    vi: lien he
+  
+block3:
+  title:
+    en: Quick Links
+    vi: link
+  
+block4:
+  title:
+    en: Newsletter
+    vi: Newsletter
+  description:
+    en: Far far away, behind the word mountains, far from the countries.
+    vi: sdafafasfadsfasd
+  

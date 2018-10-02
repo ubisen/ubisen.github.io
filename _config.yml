@@ -1,0 +1,55 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Permalinks
+permalink:          /blogs/:categories/:title:output_ext
+
+# Site settings
+title:
+  en:               Ubisen
+  vi:               Ubisen
+
+name: Ubisen
+description:
+  en:               Ubisen Inc.
+  vi:               Công ty cổ phần Ubisen.
+
+index:
+  en:
+  vi:               vi
+
+language:
+  en:               English
+  vi:               Tiếng Việt
+
+url:                 https://ubisen.com
+baseurl:             ""
+
+paginate:            1
+paginate_path:       /blogs/page:num
+
+author:
+  name:              Ubisen
+  url:               https://ubisen.com
+  email:             contacts@ubisen.com
+
+
+collections:
+  solutions:
+    output: true
+  products:
+    output: true
+
+# Custom vars
+version:             0.0.1
+
+# Build settings
+markdown:            kramdown
+
+# Plugins
+plugins:
+  - jekyll-paginate
