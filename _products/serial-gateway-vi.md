@@ -1,12 +1,13 @@
 ---
 layout     : product
 title      : Serial gate
-description: Serial gate 
+description: Gateways enable real time data exchange between industrial fieldbus controller to a Modbus Serial Network without any use of configuration tool... 
 author     : Admin
 author_url : "https://facebook.com/ubisen"
 date       : 2018-10-1 8:00:00
 categories : product
 tags       : serial-gateway
+price      : 76$
 share_text : Serial gate
 image      : /images/services/serial_gate.png
 ref        : products-serial-gateway

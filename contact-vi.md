@@ -15,7 +15,13 @@ yourEmail: Địa chỉ email
 subject: Tiêu đề
 message: Lời nhắn
 submit: Gửi thông tin
+
+data:
+  title: An Internet of Things platform and technology company
+  description: Liên hệ chúng tôi
+
 ---
 
 {% include block-0.html %}
+{% include block-title.html data=page.data %}
 {% include block-contact.html %}

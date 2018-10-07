@@ -25,6 +25,9 @@
                             {% if content.author != null %}
                                 <div><a href="#"><span class="icon-person"></span> {{ content.author }}</a></div>
                             {% endif %}
+                            {% if content.price != null %}
+                                <div><a href="#"><span class="icon-price"></span> {{ content.price }}</a></div>
+                            {% endif %}
                         </div>
                         <h3 class="heading"><a href="{{ content.url }}">{{ content.title }}</a></h3>
                         <div>{{ content.description }}</div>

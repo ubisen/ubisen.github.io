@@ -15,8 +15,13 @@ yourEmail: Your Email
 subject: Subject
 message: Message
 submit: Send Message
+
+data:
+  title: An Internet of Things platform and technology company
+  description: Contact us
+
 ---
 
 {% include block-0.html %}
-{% include block-title.html data=site.data.home.block-2-en %}
+{% include block-title.html data=page.data %}
 {% include block-contact.html %}

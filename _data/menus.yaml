@@ -15,6 +15,14 @@
   ref: about
 
 - title:
+    en: Contact
+    vi: Liên Hệ
+  path:
+    en: /contact
+    vi: /lien-he
+  ref: contact
+
+- title:
     en: Solutions
     vi: Giải Pháp
   path:
@@ -31,24 +39,8 @@
   ref: products
 
 - title:
-    en: Contact
-    vi: Liên Hệ
-  path:
-    en: /contact
-    vi: /lien-he
-  ref: contact
-
-- title:
-    en: Blog
-    vi: Bài viết
-  path:
-    en: /blogs
-    vi: /blogs
-  ref: blogs
-
-- title:
-    en: Application
-    vi: Ứng dụng
+    en: Try now
+    vi: Dùng thử
   path:
     en: /about
     vi: /about

@@ -20,24 +20,32 @@ link:
       vi: /ve-chung-toi
 
   - title:
-      en: FAQs
-      vi: FAQs
-    path:
-      en: /
-      vi: /
-
-  - title:
       en: Privacy policy
       vi: Quyền riêng tư
     path:
       en: /privacy
       vi: /quyen-rieng-tu
+
   - title:
       en: Terms of Service
       vi: Điều khoản sử dụng
     path:
       en: /terms
       vi: /dieu-khoan
+
+  - title:
+      en: Blogs
+      vi: Blogs
+    path:
+      en: /blogs
+      vi: /blogs
+
+  - title:
+      en: FAQs
+      vi: FAQs
+    path:
+      en: /
+      vi: /
 
 block1:
   title:

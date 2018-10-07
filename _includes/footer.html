@@ -45,6 +45,10 @@
                         </div>
                     </form>
                 </div>
+                
+                <div class="ftco-footer-widget mb-4">
+                    <p><small> Template by <a href="https://colorlib.com" target="_blank">Colorlib</a></small></p>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -77,7 +81,10 @@
                         {% endfor %}
                     {% endif %}
                 </p>
-                
+
+                {% if page.lang == 'vi' %}
+                    <p><small>Giấy phép kinh doanh số 0312982400 do Sở KHĐT TP.HCM cấp ngày 22/10/2014.</small></p>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -110,6 +117,6 @@
 <script src="{{ '/js/jquery.animateNumber.min.js' | site.baseurl }}"></script>
 <script src="{{ '/js/bootstrap-datepicker.js' | site.baseurl }}"></script>
 <script src="{{ '/js/jquery.timepicker.min.js' | site.baseurl }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUb3-qBWxs-4mHARQ_hQYTauPYUQtoRok"></script>
 <script src="{{ '/js/google-map.js' | site.baseurl }}"></script>
 <script src="{{ '/js/main.js' | site.baseurl }}"></script>

@@ -7354,6 +7354,9 @@ h1, h2, h3, h4, h5,
       border-radius: 4px; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #78d5ef; }
+  .ftco-navbar-light .navbar-nav > .nav-item.active {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     font-weight: bold;
     color: white; }
