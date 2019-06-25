@@ -22,39 +22,39 @@
     vi: /lien-he
   ref: contact
 
-- title:
-    en: Solutions
-    vi: Giải Pháp
-  path:
-    en: /solutions
-    vi: /giai-phap
-  ref: solutions
+# - title:
+#     en: Solutions
+#     vi: Giải Pháp
+#   path:
+#     en: /solutions
+#     vi: /giai-phap
+#   ref: solutions
 
-- title:
-    en: Products
-    vi: Sản phẩm
-  path:
-    en: /products
-    vi: /san-pham
-  ref: products
+# - title:
+#     en: Products
+#     vi: Sản phẩm
+#   path:
+#     en: /products
+#     vi: /san-pham
+#   ref: products
 
-- title:
-    en: Try now
-    vi: Dùng thử
-  path:
-    en: /about
-    vi: /about
-  ref:
-  sub:
-    - title:
-        en: Serial gateway
-        vi: Serial gateway
-      path:
-        en: https://gateway.beegrow.com
-        vi: https://gateway.beegrow.com
-    - title:
-        en: Account
-        vi: Tài khoản
-      path:
-        en: https://admin.beegrow.com/accounts/profile
-        vi: https://admin.beegrow.com/accounts/profile
+# - title:
+#     en: Try now
+#     vi: Dùng thử
+#   path:
+#     en: /about
+#     vi: /about
+#   ref:
+#   sub:
+#     - title:
+#         en: Serial gateway
+#         vi: Serial gateway
+#       path:
+#         en: https://gateway.beegrow.com
+#         vi: https://gateway.beegrow.com
+#     - title:
+#         en: Account
+#         vi: Tài khoản
+#       path:
+#         en: https://admin.beegrow.com/accounts/profile
+#         vi: https://admin.beegrow.com/accounts/profile
