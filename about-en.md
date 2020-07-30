@@ -9,7 +9,7 @@ data:
   title: An Internet of Things platform and technology company
   description: ABOUT US
   contents:
-    - title: Welcome to our website
+    - title:
       url: /
       image: /images/sht.png
       header:

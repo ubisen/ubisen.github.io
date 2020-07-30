@@ -35,11 +35,11 @@ link:
       vi: /dieu-khoan
 
   - title:
-      en: Blogs
-      vi: Blogs
+      en: Solutions
+      vi: Giải Pháp
     path:
-      en: /blogs
-      vi: /blogs
+      en: /solutions
+      vi: /giai-phap
 
   - title:
       en: FAQs

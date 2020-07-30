@@ -9,7 +9,7 @@ data:
   title: An Internet of Things platform and technology company
   description: VỀ CHÚNG TÔI
   contents:
-    - title: Chào mừng đến với website
+    - title:
       url: /
       image: /images/sht.png
       header:

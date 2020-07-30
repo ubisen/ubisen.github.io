@@ -9,16 +9,16 @@ image: /images/services/agriculture.jpg
 
 {% include block-welcome.html data=site.data.home.welcome-en %}
 
-{% include block-slider.html data=site.data.home.slider %}
+<!-- {% include block-slider.html data=site.data.home.slider %} -->
 
 {% include block-4.html data=site.data.home.block-4-en %}
 
-{% assign solutions = site.solutions | where_exp:"item", "item.lang == page.lang" %}
+<!-- {% assign solutions = site.solutions | where_exp:"item", "item.lang == page.lang" %} -->
 
-{% include block-2.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}
+<!-- {% include block-2.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %} -->
 
-{% include block-number.html data=site.data.home.block-number-en %}
+<!-- {% include block-number.html data=site.data.home.block-number-en %} -->
 
-{% include block-3.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}
+<!-- {% include block-3.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %} -->
 
 {% include block-content-slider.html title="An Internet of Things platform and technology" description="Use cases" contents=solutions %}
