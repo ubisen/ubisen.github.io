@@ -36,9 +36,6 @@ permalink: /dieu-khoan/
 		Sell, rent or sub-license material from https://ubsien.com
 		Reproduce, duplicate or copy material from https://ubsien.com
 	
-	Redistribute content from Ubisen (unless content is specifically made for redistribution).
-Hyperlinking to our Content
-	
 		The following organizations may link to our Web site without prior written approval:
 			
 			Government agencies;
@@ -139,8 +136,5 @@ Hyperlinking to our Content
 	(including negligence) and for breach of statutory duty.
 	To the extent that the website and the information and services on the website are provided free of charge,
 	we will not be liable for any loss or damage of any nature.
-	
 #### Credit & Contact Information
-	This Terms and conditions page was created at termsandconditionstemplate.com generator. If you have
-	any queries regarding any of our terms, please contact us.
-    
+	If you have any queries regarding any of our terms, please contact us.

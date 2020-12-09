@@ -51,4 +51,4 @@ Although most changes are likely to be minor, Ubisen may change its Privacy Poli
 
  
 ####  Credit & Contact Information
-This privacy policy was created at http://termsandconditionstemplate.com/privacy-policy-generator/. If you have any questions about this Privacy Policy, please contact us via or phone.
+If you have any questions about this Privacy Policy, please contact us email: contact@ubisen.com.

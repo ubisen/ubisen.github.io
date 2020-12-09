@@ -36,11 +36,7 @@ permalink: /terms/
 		Sell, rent or sub-license material from https://ubsien.com
 		Reproduce, duplicate or copy material from https://ubsien.com
 	
-	Redistribute content from Ubisen (unless content is specifically made for redistribution).
-Hyperlinking to our Content
-	
 		The following organizations may link to our Web site without prior written approval:
-			
 			Government agencies;
 			Search engines;
 			News organizations;
@@ -48,9 +44,6 @@ Hyperlinking to our Content
 				manner as they hyperlink to the Web sites of other listed businesses; and
 			Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls,
 				and charity fundraising groups which may not hyperlink to our Web site.
-			
-		
-	
 	
 		These organizations may link to our home page, to publications or to other Web site information so long
 			as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or
@@ -141,5 +134,4 @@ Hyperlinking to our Content
 	we will not be liable for any loss or damage of any nature.
 	
 #### Credit & Contact Information
-	This Terms and conditions page was created at termsandconditionstemplate.com generator. If you have
-	any queries regarding any of our terms, please contact us.
+	If you have any queries regarding any of our terms, please contact us.
