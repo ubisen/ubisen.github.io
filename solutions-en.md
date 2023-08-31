@@ -20,7 +20,7 @@ description: Ubisen solutions
                     <a href="{{ solution.url | prepend: site.baseurl }}" class="block-20" style="background-image: url('{{ solution.image | prepend: site.baseurl }}');">
                     </a>
                     <div class="text p-4 d-block">
-                        <h3 class="heading"><a href="{{ blog.url | prepend: site.baseurl }}">{{ solution.title }}</a></h3>
+                        <h3 class="heading"><a href="{{ solution.url | prepend: site.baseurl }}">{{ solution.title }}</a></h3>
                         <div class="meta mb-2">
                             <p>{{ solution.description | strip_html | strip_newlines }}</p>
                         </div>

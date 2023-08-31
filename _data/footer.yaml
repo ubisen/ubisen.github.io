@@ -42,11 +42,11 @@ link:
       vi: /giai-phap
 
   - title:
-      en: FAQs
-      vi: FAQs
+      en: Products
+      vi: Sản Phẩm
     path:
-      en: /
-      vi: /
+      en: /products
+      vi: /san-pham
 
 block1:
   title:

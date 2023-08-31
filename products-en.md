@@ -21,8 +21,8 @@ description: Ubisen products
                     </a>
                     <div class="text p-4 d-block">
                         <div class="meta mb-3">
-                            <div><a href="#"><span class="icon-tags"></span> {{ product.tags }}</a></div>
-                            <div><a href="#"><span class="icon-shopping_cart"></span> {{ product.price }}</a></div>
+                            <div><span class="icon-tags"></span> {{ product.tags }}</div>
+                            <div><span class="icon-shopping_cart"></span> {{ product.price }}</div>
                         </div>
                         <h3 class="heading"><a href="{{ product.url | prepend: site.baseurl }}">{{ product.title }}</a></h3>
                         <div class="meta mb-2">
