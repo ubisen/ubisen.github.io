@@ -1,12 +1,12 @@
 title: Ubisen Platform
-description: IOT Solution connecting every devices via the Internet.
+description: IoT Solution connects every device via the Internet.
 contents:
   - title: Security
     url: /
     image: /
     icon: icon-security
     header:
-    description: Secure connection and high scalable system.
+    description: Secure connection and highly scalable system.
 
   - title: Easy
     url: /
@@ -27,5 +27,5 @@ contents:
     image: /
     header:
     icon: icon-cloud_circle
-    description: Cloud service supporting enterprise mobility..
+    description: Cloud service supporting enterprise mobility.
 
